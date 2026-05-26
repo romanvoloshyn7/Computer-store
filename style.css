@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.product p {
+    font-weight: bold;
+    color: green;
+}
+
+.product a {
+    display: inline-block;
+    margin-top: 10px;
+    background: blue;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* ===== КОШИК ===== */
+
+.cart-container {
+    width: 70%;
+    margin: 30px auto;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.cart-item h3 {
+    margin: 0;
+}
+
+.cart-item p {
+    margin: 5px 0;
+    font-weight: bold;
+    color: green;
+}
+
+h2 {
+    margin-top: 20px;
+    color: red;
+}
